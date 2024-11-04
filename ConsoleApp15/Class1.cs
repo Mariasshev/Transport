@@ -11,17 +11,20 @@ namespace ConsoleApp15
                 GroundTransport => $"Тип: Наземный транспорт\n" +
                                    $"{transport.Move()}\n" +
                                    $"Тип топлива: {transport.FuelType()}\n" +
-                                   $"Максимальная скорость: {transport.maxSpeed()}",
+                                   $"Максимальная скорость: {transport.maxSpeed()} км/ч" +
+                                   $"\n--------------------------\n",
 
                 WaterTransport => $"Тип: Водный транспорт\n" +
                                   $"{transport.Move()}\n" +
                                   $"Тип топлива: {transport.FuelType()}\n" +
-                                  $"Максимальная скорость: {transport.maxSpeed()}",
+                                  $"Максимальная скорость: {transport.maxSpeed()} м/ч" +
+                                  $"\n--------------------------\n",
 
                 AirTransport => $"Тип: Воздушный транспорт\n" +
                                 $"{transport.Move()}\n" +
                                 $"Тип топлива: {transport.FuelType()}\n" +
-                                $"Максимальная скорость: {transport.maxSpeed()}",
+                                $"Максимальная скорость: {transport.maxSpeed()} км/ч" +
+                                $"\n--------------------------\n",
 
                 _ => "Неизвестный тип транспорта."
             };

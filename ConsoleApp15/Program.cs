@@ -17,7 +17,7 @@ namespace ConsoleApp15
     public interface ITransport
     {
         string Name { get; }
-        void Move();
+        string Move();
         string FuelType();
         double maxSpeed();
 
@@ -42,9 +42,9 @@ namespace ConsoleApp15
             this.drivers = drivers;
         }
 
-        public void Move()
+        public string Move()
         {
-            Console.WriteLine("Ground transport ride on road");
+           return "Ground transport ride on road";
         }
 
         public string FuelType()
@@ -74,9 +74,9 @@ namespace ConsoleApp15
             this.peopleAmount = peopleAmount;
         }
 
-        public void Move()
+        public string Move()
         {
-            Console.WriteLine("Water transport moves on water");
+            return "Water transport moves on water";
         }
 
         public string FuelType()
@@ -106,9 +106,9 @@ namespace ConsoleApp15
             this.peopleAmount = peopleAmount;
         }
 
-        public void Move()
+        public string Move()
         {
-            Console.WriteLine("Water transport moves on air");
+            return "Air transport moves on air";
         }
 
         public string FuelType()
